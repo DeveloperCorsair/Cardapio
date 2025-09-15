@@ -1,0 +1,44 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+header a {
+    color: black;
+    text-decoration: inherit;
+}
+
+.lista {
+    margin-top: 2%;
+    margin-left: 15%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3%;
+}
+
+#preco {
+    margin-left: 2%;
+}
+
+.name {
+    margin-top: 2%;
+    margin-left: 6%;
+}
+
+body>footer {
+    position: sticky;
+    top: 100vh;
+    text-align: center;
+}
+
+footer a {
+    color: #ffe6cc;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
