@@ -8,6 +8,41 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon"
         href="https://www.shutterstock.com/image-vector/food-menu-outline-icon-vector-600nw-2560326619.jpg">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            margin: 2%;
+            font-family: 'Montserrat';
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid black;
+        }
+
+        header a {
+            color: black;
+            text-decoration: inherit;
+        }
+
+        .name {
+            margin-top: 2%;
+        }
+
+        #dev {
+            text-decoration: underline;
+            color: black;
+        }
+
+        body>footer {
+            position: sticky;
+            top: 100vh;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -16,17 +51,55 @@
             <a href="./index.html">Tempero da Casa</a>
         </h2>
         <nav>
-            <a href="./about.html">Sobre nós</a>
+            <a href="./about.html">Home</a>
             <span>|</span>
-            <a href="./contact.html">Cardápio</a>
+            <a href="./contact.html">Sobre nós</a>
         </nav>
     </header>
     <main>
-
+        <section>
+            <div class="name">
+                <h2>
+                    Cardápio
+                </h2>
+            </div>
+            <div class="lista">
+                <div class="prato-principal">
+                    <ul>
+                        <h3>Pratos Principais</h3>
+                        <li>Filé à Parmegiana</li>
+                        <li>Lasanha Bolonhesa</li>
+                        <li>Frango Grelhado com Legumes</li>
+                        <li>Filé à Parmegiana</li>
+                        <li>Filé à Parmegiana</li>
+                    </ul>
+                </div>
+                <div class="Saladas">
+                    <ul>
+                        <h3>Saladas</h3>
+                        <li>Filé à Parmegiana</li>
+                        <li>Lasanha Bolonhesa</li>
+                        <li>Frango Grelhado com Legumes</li>
+                        <li>Filé à Parmegiana</li>
+                        <li>Filé à Parmegiana</li>
+                    </ul>
+                </div>
+                <div class="sobremesas">
+                    <ul>
+                        <h3>Sobremesas</h3>
+                        <li>Filé à Parmegiana</li>
+                        <li>Lasanha Bolonhesa</li>
+                        <li>Frango Grelhado com Legumes</li>
+                        <li>Filé à Parmegiana</li>
+                        <li>Filé à Parmegiana</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
         Desenvolved by <a href="https://github.com/DeveloperCorsair" id="dev">Developer-Corsair</a> & <a
-            href="https://github.com/tirolasca" id="dev"></a>Tirolasca
+            href="https://github.com/tirolasca" id="dev">Tirolasca</a>
     </footer>
 </body>
 
