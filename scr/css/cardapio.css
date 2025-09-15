@@ -1,36 +1,147 @@
+/* Reset e padrão */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: #fdf6ec;
+    color: #444;
+    line-height: 1.7;
+}
+
+/* Header */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid black;
+    background: linear-gradient(90deg, #ca6f1e, #e59866);
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-header a {
-    color: black;
-    text-decoration: inherit;
+header h2 a {
+    color: #fff;
+    text-decoration: none;
+    font-family: "Georgia", serif;
+    font-size: 1.8rem;
 }
 
-.lista {
-    margin-top: 2%;
-    margin-left: 15%;
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 3%;
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 0.7rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-#preco {
-    margin-left: 2%;
+header nav a:hover {
+    color: #ffe6cc;
 }
 
-.name {
-    margin-top: 2%;
-    margin-left: 6%;
-}
-
-body>footer {
-    position: sticky;
-    top: 100vh;
+/* Título da página */
+.name h2 {
     text-align: center;
+    font-size: 2rem;
+    color: #ca6f1e;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.name h2::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: #e59866;
+    margin: 0.5rem auto 0;
+    border-radius: 2px;
+}
+
+/* Grid das categorias */
+.lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 0 2rem 3rem;
+}
+
+/* Card de cada categoria */
+.lista div {
+    background: #fff;
+    border-radius: 20px;
+    padding: 2rem;
+    border: 2px solid #f3d6b0;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.18), 0 0 0 2px #fdf0e5 inset;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.lista div:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.3), 0 0 0 2px #e59866 inset;
+    border-color: #e59866;
+}
+
+/* Título das categorias */
+.lista h3 {
+    background: linear-gradient(90deg, #e59866, #ca6f1e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+/* Lista de pratos */
+.lista ul {
+    list-style: none;
+}
+
+.lista li {
+    font-size: 1.05rem;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem;
+    border-bottom: 1px dotted #ddd;
+    transition: background 0.3s ease;
+}
+
+.lista li::before {
+    content: "🍽️";
+    margin-right: 0.5rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.lista li:hover::before {
+    transform: rotate(15deg) scale(1.2);
+}
+
+.lista li:hover {
+    background: #fdf0e5;
+    transform: scale(1.02);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+/* Preço */
+#preco {
+    display: inline-block;
+    background: #f5d6b0;
+    color: #a04000;
+    font-weight: bold;
+    padding: 0.2rem 0.6rem;
+    border-radius: 12px;
+    margin-left: 5px;
+    font-size: 0.95rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: linear-gradient(90deg, #ca6f1e, #e59866);
+    color: #fff;
+    padding: 1.5rem;
+    margin-top: 3rem;
+    font-size: 0.95rem;
+    box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.1);
 }
 
 footer a {
@@ -41,4 +152,17 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .lista {
+        grid-template-columns: 1fr;
+        padding: 0 1rem 2rem;
+    }
 }
