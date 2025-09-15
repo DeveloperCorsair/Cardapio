@@ -1,31 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tempero da Casa - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h2>
-            <a href="./index.html">Tempero da Casa</a>
-        </h2>
-        <nav>
-            <a href="./about.html">Sobre nós</a>
-            <span>|</span>
-            <a href="./contact.html">Cardápio</a>
-        </nav>
-    </header>
-    <main>
-        
-    </main>
-    <footer>
-        Desenvolved by <a href="https://github.com/DeveloperCorsair" id="dev">Developer-Corsair</a> & <a
-            href="https://github.com/tirolasca" id="dev"></a>Tirolasca
-    </footer>
-</body>
+  <!-- Cabeçalho -->
+  <header>
+    <h2>
+      <a href="index.html">Tempero da Casa</a>
+    </h2>
+    <nav>
+      <a href="./sobre.html">Sobre nós</a>
+      <span>|</span>
+      <a href="./cardapio.html">Cardápio</a>
+    </nav>
+  </header>
 
+  <!-- Hero / Banner -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Bem-vindo ao Tempero da Casa</h1>
+      <p>Tradição, sabor e qualidade em cada prato.</p>
+      <a href="./cardapio.html" class="btn">Ver Cardápio</a>
+    </div>
+  </section>
+
+  <!-- Seção Destaques -->
+  <main class="container">
+    <section class="destaques">
+      <h2>Pratos em Destaque</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="/img/prato1.jpg" alt="Prato especial 1">
+          <h3>Feijoada Completa</h3>
+          <p>Um clássico brasileiro servido com todo carinho.</p>
+        </div>
+        <div class="card">
+          <img src="/img/prato2.png" alt="Prato especial 2">
+          <h3>Moqueca de Peixe</h3>
+          <p>Sabor do mar com tempero caseiro irresistível.</p>
+        </div>
+        <div class="card">
+          <img src="/img/prato3.jpg" alt="Prato especial 3">
+          <h3>Churrasco Premium</h3>
+          <p>Carnes selecionadas preparadas na brasa.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer>
+    <p>
+      Desenvolvido por 
+      <a href="https://github.com/DeveloperCorsair" id="dev">Developer-Corsair</a> & 
+      <a href="https://github.com/tirolasca" id="dev">Tirolasca</a>
+    </p>
+  </footer>
+</body>
 </html>
