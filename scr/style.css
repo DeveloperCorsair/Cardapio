@@ -1,0 +1,79 @@
+/* Reset e padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fff5e6, #fce8d8);
+  color: #333;
+  line-height: 1.8;
+  padding: 2rem;
+}
+
+/* Container central */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 1rem;
+}
+
+/* Card da seção sobre */
+.sobre {
+  background: #fff;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sobre:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Título */
+.sobre h2 {
+  color: #d35400;
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+.sobre h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #d35400;
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Texto */
+.sobre p {
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  font-size: 1.05rem;
+  color: #444;
+}
+
+/* Imagem */
+.img-sobre {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.img-sobre img {
+  max-width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+  transition: transform 0.4s ease;
+}
+
+.img-sobre img:hover {
+  transform: scale(1.03);
+}
