@@ -16,9 +16,3 @@ Este é um projeto simples e funcional de um cardápio digital de cozinha, ideal
 - Cardápio: Exibe os pratos disponíveis, com informações como nome, descrição, ingredientes e preço. Pode ser adaptado para incluir imagens e categorias.
 
 - Sobre: Informações sobre o propósito do projeto, quem desenvolveu e possíveis instruções de uso ou contato.
-
----
-
-## 🚀 Tecnologias utilizadas 
-
-
