@@ -104,6 +104,7 @@ header nav a:hover {
 .lista h3 {
   background: linear-gradient(90deg, #e59866, #ca6f1e);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-size: 1.5rem;
