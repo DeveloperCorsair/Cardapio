@@ -18,6 +18,7 @@ Este é um projeto simples e funcional de um cardápio digital de cozinha, ideal
 - Sobre: Informações sobre o propósito do projeto, quem desenvolveu e possíveis instruções de uso ou contato.
 
 --- 
-## Site de acesso:
+## Acesso para o site:
 
 site: https://temperodacasa.vercel.app/
+
